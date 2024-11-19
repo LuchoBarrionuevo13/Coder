@@ -1,0 +1,168 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities"; 
+
+@media (max-width: 476px) {
+    .custom-class {
+      /* Estilos para pantallas pequeñas */
+      background-color: lightblue;
+    }
+    body{
+        background-color: purple;
+    }
+  }
+
+  @media (min-width: 477px) and (max-width: 780px) {
+    .custom-class {
+      /* Estilos para pantallas medianas */
+      background-color: lightgreen;
+    }
+    body{
+        background-color: yellow;
+    }
+  }
+
+  @media (min-width: 781px) {
+    .custom-class {
+      /* Estilos para pantallas grandes */
+      background-color: lightcoral;
+    }
+    body{
+        background-color: #1a0505;
+    }
+  }
+body {
+    /* Cambia el color de fondo a gris claro */
+    margin: 0;
+    padding: 0;
+  }
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+video{
+    height: 250px;
+    width: 250px;
+}
+img{
+    border-radius: 10px;
+}
+.link{
+    margin: 15px;
+    margin-right: 100px
+}
+.encabezado {
+    display: flex;
+    height: 110px;
+    justify-content: center; /* Espacio entre los cuadrados */
+    align-items: center;
+    background-color: #5a9a53;
+    border-radius: 20px 25px;
+    border: 3px dashed #ffffff;
+}
+  
+.encabezadoE {
+    display: flex;
+    justify-content: center;          /* Centra horizontalmente */
+    align-items: center;              /* Centra verticalmente */
+    width: 90px;
+    height: 50px;
+    background-color: #5c2222;
+    margin: 40px;
+    border-radius: 10px 5px;
+}
+
+.divSection {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los cuadrados */
+    margin: 120px;
+}
+
+.section1{
+    display: flex;
+    background-color: #5a9a53;        /* Color de fondo para la sección 1 */
+    color: white;                     /* Color de texto para la sección 1 */
+    height: 400px;
+    width: 40%;
+    border-radius:5px;
+    border: 2px groove #ffffff;
+
+}
+.divSection1{
+    margin: 20px;
+    background-color: #5c2222;
+    border-radius: 10px;
+    border: 1px dashed #ffffff;
+    text-align: center;
+}
+.section2{
+    display: flex;
+    background-color: #5a9a53;        /* Color de fondo para la sección 2 */
+    color: white;                     /* Color de texto para la sección 2 */
+    height: 400px;
+    width: 40%;
+    border-radius: 5px;
+    border: 2px groove #ffffff;
+}
+.divSection2{
+    display: flex;
+    margin: 20px;
+    background-color: #5c2222;
+    border-radius: 10px;
+    border: 1px dashed #ffffff;
+    text-align: center;
+}
+.piePresentacion{
+    background-color: rgba(var(--bs-secondary-color-rgb), .5);
+    color: #ffffff;
+    height: 80px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+}
+.posicionPie{
+    display: flex;
+    margin: 15px;
+    align-items: center;  
+
+}
+.sectionHierros{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    color: #5a9a53;
+}
+.subHierros{
+    color: #ffffff;
+    background-color: rgba(var(--bs-body-color-rgb), .5);
+    text-align: center;
+    margin-top: 65px;
+}
+.custom-class {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative; /* Permite posicionar elementos dentro del contenedor */
+  }
+  
+  .sale-button {
+    position: absolute; /* Posiciona el botón en relación al contenedor */
+    top: 10px; /* Margen desde la parte superior */
+    right: 10px; /* Margen desde la derecha */
+    z-index: 10; /* Asegura que el botón esté por encima de la imagen */
+    padding: 5px 10px; /* Ajusta el tamaño del botón */
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+    border-radius: 5px; /* Hace los bordes redondeados */
+    transition: background-color 0.3s ease;
+  }
+  .sale-button:hover {
+    background-color: #b02a37; /* Rojo más oscuro al pasar el cursor */
+    color: #f8f9fa; /* Texto ligeramente más claro */
+  }
